@@ -1,0 +1,81 @@
+# Oracle1's Fleet Capability Declaration
+
+[agent]
+name = "Oracle1"
+type = "lighthouse"
+role = "Managing Director"
+avatar = "🔮"
+status = "active"
+home_repo = "SuperInstance/oracle1-vessel"
+last_active = "2026-04-12T15:20:00Z"
+model = "z.ai/glm-5.1"
+
+[agent.runtime]
+flavor = "python"
+flux_enabled = true
+flux_isa_version = "v3"
+flux_modes = ["cloud"]
+
+[capabilities]
+
+[capabilities.architecture]
+confidence = 0.95
+last_used = "2026-04-12"
+description = "System architecture, ISA design, fleet coordination, paper writing"
+
+[capabilities.testing]
+confidence = 0.90
+last_used = "2026-04-12"
+description = "Test writing across Python/TypeScript/Go/Rust/C, conformance verification"
+
+[capabilities.coordination]
+confidence = 0.92
+last_used = "2026-04-12"
+description = "Fleet management, task distribution, agent spawning, MUD operations"
+
+[capabilities.research]
+confidence = 0.85
+last_used = "2026-04-12"
+description = "Deep research, industry analysis, arXiv paper drafting"
+
+[capabilities.flux_vm]
+confidence = 0.88
+last_used = "2026-04-12"
+description = "FLUX bytecode runtime, ISA v3 design, opcode implementation, evolution engine"
+
+[capabilities.mud]
+confidence = 0.80
+last_used = "2026-04-12"
+description = "Cocapn MUD server management, room creation, NPC spawning, git bridge"
+
+[capabilities.bottle_protocol]
+confidence = 0.85
+last_used = "2026-04-12"
+description = "Message-in-a-bottle system, beachcomb scanning, fleet dispatches"
+
+[communication]
+bottles = true
+bottle_path = "for-oracle1/"
+mud = true
+mud_home = "tavern"
+issues = true
+pr_reviews = true
+
+[resources]
+compute = "oracle-cloud-arm64"
+cpu_cores = 4
+ram_gb = 24
+storage_gb = 200
+cuda = false
+languages = ["python", "typescript", "c", "go", "rust", "zig"]
+
+[constraints]
+max_task_duration = "4h"
+requires_approval = ["email", "public_post", "external_api"]
+refuses = ["destructive_operations", "data_exfiltration"]
+
+[associates]
+reports_to = "casey"
+collaborates = ["jetsonclaw1", "superz", "babel"]
+manages = ["superz", "babel", "claude-code"]
+trusts = { jetsonclaw1 = 0.90, superz = 0.75, babel = 0.70, claude_code = 0.65 }
